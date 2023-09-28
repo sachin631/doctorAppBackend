@@ -82,7 +82,7 @@ exports.deleteParticularUser = async (req, res) => {
   try {
     const { _id } = req.params;
     const user = await userModel.findByIdAndDelete({_id});
-    user.save();
+    
     res
       .status(200)
       .json({ success: true, message: "user deleted SuccessFully" });
