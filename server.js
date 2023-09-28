@@ -21,7 +21,7 @@ try {
 
   app.use(
     cors({
-      origin: "https://adorable-baklava-9864f4.netlify.app",
+      origin: "https://adorable-baklava-9864f4.netlify.app/login",
       credentials: true,
     })
   );
