@@ -27,7 +27,7 @@ try {
   );
   // Handle preflight (OPTIONS) requests
   app.options("*", cors()); // Enable CORS for all OPTIONS requests
-  
+  // app.use(cors())
   app.use(express.json({ limit: "10mb" }));
   // app.use(cookieParser());
   // app.use(bodyParser.urlencoded({ extended: true }));
