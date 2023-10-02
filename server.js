@@ -21,10 +21,17 @@ try {
 
   app.use(
     cors({
-      origin: "https://main--adorable-baklava-9864f4.netlify.app",
+      origin: "https://docappfrontend-93oicc1d2-sachin-sangwans-projects.vercel.app",
       credentials: true,
     })
   );
+
+  // app.use(
+  //   cors({
+  //     origin: "https://main--adorable-baklava-9864f4.netlify.app",
+  //     credentials: true,
+  //   })
+  // );
   // Handle preflight (OPTIONS) requests
   app.options("*", cors()); // Enable CORS for all OPTIONS requests
   // app.use(cors())
